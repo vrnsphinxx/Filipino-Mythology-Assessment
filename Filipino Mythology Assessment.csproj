@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96B755DE-1553-4133-A574-F76060D16022}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CP2ProjectConcept</RootNamespace>
+    <AssemblyName>CP2ProjectConcept</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OtherParts\Quizzes\quizTF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherParts\Quizzes\quizTF.Designer.cs">
+      <DependentUpon>quizTF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherParts\Quizzes\quizMult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherParts\Quizzes\quizMult.Designer.cs">
+      <DependentUpon>quizMult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="OtherParts\Quizzes\quizTF.resx">
+      <DependentUpon>quizTF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherParts\Quizzes\quizMult.resx">
+      <DependentUpon>quizMult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skull-and-bones-death-rate%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skull-and-bones-death-rate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\343.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\307.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\226.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\369.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trial1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trial11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trial12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\086.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\057.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\058.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2861.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Con1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Con1\9381b219cace4101f0d61585b10862fe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Con1Final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\test photos\testing1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fact-sign-tag%404x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Con1\Con1Fin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Con1\Con1_p2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\287.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Con1\Con1_p3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Eco1GreatDep\GreatDepPg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Eco1GreatDep\GreatDepPg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Eco1GreatDep\GreatDepPg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\030.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\IndusRev\IndusRevPg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\IndusRev\IndusRevPg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\IndusRev\IndusRevPg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\IndusRev\Final\IndusRevFPg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\IndusRev\Final\IndusRevFPg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\IndusRev\Final\IndusRevFPg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\AgriRev\AgriRevPg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\AgriRev\AgriRevPg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\WorldWar2\WW2_pg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\WorldWar2\WW2_pg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\WorldWar2\WW2_pg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\WorldWar2\WW2_pg4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\WorldWar2\WW2_pg5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Introduction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Antibiotics\AntibioticsPg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\IrishFamine\Irish_pg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\IrishFamine\Irish_pg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\290.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\295.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\testquiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\test for quizzes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\multFinale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\044.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\mult1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\mult2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\mult3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\mult4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\mult5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\mult6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\mult7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\mult8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\mult9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\mult10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz1\multFinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\057w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\055.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz2\tf1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz2\tf2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz2\tf3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz2\tf4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz2\tf5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz2\tf6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz2\tf7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz2\tf8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz2\tf9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz2\tf10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\quiz2\tfFinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Midterm Version Photos\IntroductionMidterm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Midterm Version Photos\Ver. 1.0.5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Midterm Version Photos\Update Log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\IntroductionMidterm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\From other form\trial12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\From other form\343.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\From other form\307.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\From other form\226.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\From other form\369.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\From other form\044.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\Midterm\MidtermIntro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="All Photos\From other form\086.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tulog pa %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tulog pa %283%291.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
